@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.nepaltourism.desktopapp.controllers.TouristDashboardController" prefWidth="800" prefHeight="600">
+    <Label fx:id="welcomeLabel" text="Welcome, Tourist!" styleClass="title" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="50"/>
+    <TableView fx:id="bookingTable" prefWidth="700" prefHeight="200" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="50">
+        <columns>
+            <TableColumn fx:id="bookingIdColumn" text="Booking ID" prefWidth="100"/>
+            <TableColumn fx:id="attractionColumn" text="Attraction" prefWidth="200"/>
+            <TableColumn fx:id="guideColumn" text="Guide" prefWidth="150"/>
+            <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+            <TableColumn fx:id="statusColumn" text="Status" prefWidth="100"/>
+        </columns>
+    </TableView>
+    <PieChart fx:id="nationalityChart" title="Tourists by Nationality" prefWidth="700" prefHeight="200" AnchorPane.topAnchor="280" AnchorPane.leftAnchor="50"/>
+    <HBox spacing="10" AnchorPane.topAnchor="500" AnchorPane.leftAnchor="200" AnchorPane.rightAnchor="200">
+        <Button fx:id="bookButton" text="Book" onAction="#handleBook"/>
+        <Button fx:id="emergencyButton" text="Report Emergency" onAction="#handleEmergency"/>
+        <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout"/>
+    </HBox>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.nepaltourism.desktopapp.controllers.GuideDashboardController" prefWidth= "800" prefHeight="600">
+    <Label fx:id="welcomeLabel" text="Welcome, Guide!" styleClass="title" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="50"/>
+    <TableView fx:id="bookingTable" prefWidth="700" prefHeight="400" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="50">
+        <columns>
+            <TableColumn fx:id="bookingIdColumn" text="Booking ID" prefWidth="100"/>
+            <TableColumn fx:id="touristColumn" text="Tourist" prefWidth="150"/>
+            <TableColumn fx:id="attractionColumn" text="Attraction" prefWidth="200"/>
+            <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+            <TableColumn fx:id="statusColumn" text="Status" prefWidth="100"/>
+        </columns>
+    </TableView>
+    <HBox spacing="10" AnchorPane.topAnchor="480" AnchorPane.leftAnchor="200" AnchorPane.rightAnchor="200">
+        <Button fx:id="acceptButton" text="Accept" onAction="#handleAccept"/>
+        <Button fx:id="rejectButton" text="Reject" onAction="#handleReject"/>
+        <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout"/>
+    </HBox>
+</AnchorPane>

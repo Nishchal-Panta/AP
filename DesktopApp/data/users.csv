@@ -1,0 +1,4 @@
+Role,ID,Name,Password,Contact,Extra
+Admin,admin1,Admin User,admin123,,,
+Tourist,tourist1,John Doe,pass123,1234567890,USA;9876543210
+Guide,guide1,Sita Rai,guide123,9876543210,Nepali,English;5 years

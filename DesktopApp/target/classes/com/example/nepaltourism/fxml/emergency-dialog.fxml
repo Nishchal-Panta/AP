@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.nepaltourism.desktopapp.controllers.EmergencyDialogController" prefWidth="400" prefHeight="300">
+    <Label fx:id="descriptionLabel" text="Description" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="50"/>
+    <TextArea fx:id="descriptionArea" prefWidth="300" prefHeight="150" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="50"/>
+    <Button text="Report" onAction="#handleReport" AnchorPane.topAnchor="220" AnchorPane.leftAnchor="150" AnchorPane.rightAnchor="150"/>
+</AnchorPane>

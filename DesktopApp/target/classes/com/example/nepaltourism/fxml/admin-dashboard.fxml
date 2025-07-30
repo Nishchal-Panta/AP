@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.nepaltourism.desktopapp.controllers.AdminDashboardController" prefWidth="800" prefHeight="600">
+    <Label fx:id="welcomeLabel" text="Welcome, Admin!" styleClass="title" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="50"/>
+    <HBox spacing="10" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50">
+        <TableView fx:id="userTable" prefWidth="350" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="userIdColumn" text="User ID" prefWidth="100"/>
+                <TableColumn fx:id="userNameColumn" text="Name" prefWidth="150"/>
+                <TableColumn fx:id="userRoleColumn" text="Role" prefWidth="100"/>
+            </columns>
+        </TableView>
+        <TableView fx:id="attractionTable" prefWidth="350" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="attractionIdColumn" text="Attraction ID" prefWidth="100"/>
+                <TableColumn fx:id="attractionNameColumn" text="Name" prefWidth="150"/>
+                <TableColumn fx:id="attractionTypeColumn" text="Type" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </HBox>
+    <BarChart fx:id="bookingChart" title="Bookings by Attraction" prefWidth="700" prefHeight="200" AnchorPane.topAnchor="280" AnchorPane.leftAnchor="50">
+        <xAxis>
+            <CategoryAxis label="Attraction"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Number of Bookings"/>
+        </yAxis>
+    </BarChart>
+    <HBox spacing="10" AnchorPane.topAnchor="500" AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100">
+        <Button fx:id="addUserButton" text="Add User" onAction="#handleAddUser"/>
+        <Button fx:id="addAttractionButton" text="Add Attraction" onAction="#handleAddAttraction"/>
+        <Button fx:id="exportButton" text="Export Report" onAction="#handleExportReport"/>
+        <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout"/>
+    </HBox>
+</AnchorPane>

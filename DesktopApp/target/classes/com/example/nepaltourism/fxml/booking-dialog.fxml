@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.nepaltourism.desktopapp.controllers.BookingDialogController" prefWidth="400" prefHeight="300">
+    <Label fx:id="attractionLabel" text="Attraction" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="50"/>
+    <ComboBox fx:id="attractionComboBox" prefWidth="300" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="50"/>
+    <Label fx:id="guideLabel" text="Guide" AnchorPane.topAnchor="90" AnchorPane.leftAnchor="50"/>
+    <ComboBox fx:id="guideComboBox" prefWidth="300" AnchorPane.topAnchor="120" AnchorPane.leftAnchor="50"/>
+    <Label fx:id="dateLabel" text="Date" AnchorPane.topAnchor="160" AnchorPane.leftAnchor="50"/>
+    <DatePicker fx:id="datePicker" prefWidth="300" AnchorPane.topAnchor="190" AnchorPane.leftAnchor="50"/>
+    <Label fx:id="festivalLabel" styleClass="festival-text" AnchorPane.topAnchor="230" AnchorPane.leftAnchor="50"/>
+    <Button text="Book" onAction="#handleBook" AnchorPane.topAnchor="270" AnchorPane.leftAnchor="150" AnchorPane.rightAnchor="150"/>
+</AnchorPane>
