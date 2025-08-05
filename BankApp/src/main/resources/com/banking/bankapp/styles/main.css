@@ -1,0 +1,127 @@
+/* General Styles */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f4f6f6; /* Light gray background */
+}
+
+/* Header Panel */
+.header-panel {
+    -fx-background-color: #2980b9; /* Blue */
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+.header-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: WHITE;
+}
+
+.header-subtitle {
+    -fx-font-size: 18px;
+    -fx-text-fill: #ecf0f1; /* Lighter white */
+}
+
+/* Content Panel */
+.content-panel {
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-alignment: top-center;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50; /* Dark blue-gray */
+}
+
+.text-area {
+    -fx-background-color: #ffffff; /* White */
+    -fx-border-color: #bdc3c7; /* Light gray border */
+    -fx-border-width: 1px;
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 12px;
+    -fx-padding: 10px;
+    -fx-highlight-fill: #3498db; /* Blue highlight */
+    -fx-highlight-text-fill: WHITE;
+}
+
+/* Control Panel */
+.control-panel {
+    -fx-background-color: #ecf0f1; /* Lighter gray */
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+}
+
+.form-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #34495e; /* Darker blue-gray */
+}
+
+.text-input {
+    -fx-pref-height: 30px;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 10px;
+}
+
+.text-input:focused {
+    -fx-border-color: #3498db; /* Blue focus */
+    -fx-border-width: 2px;
+}
+
+.combo-box {
+    -fx-pref-height: 30px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #bdc3c7;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+.combo-box .arrow-button:hover {
+    -fx-background-color: #aab7b8;
+}
+
+/* Buttons */
+.button {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+.primary-button {
+    -fx-background-color: #3498db; /* Blue */
+}
+
+.secondary-button {
+    -fx-background-color: #95a5a6; /* Gray */
+}
+
+.success-button {
+    -fx-background-color: #2ecc71; /* Green */
+}
+
+.danger-button {
+    -fx-background-color: #e74c3c; /* Red */
+}
+
+.info-button {
+    -fx-background-color: #9b59b6; /* Purple */
+}
